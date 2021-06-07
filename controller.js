@@ -4,6 +4,7 @@ function playSound(e) {
   let audio;
   let key;
   let vol;
+  console.log(e);
   if (e instanceof KeyboardEvent) {
     //console.log("keyboardEvent"); //show if keyboardEvent in console
     audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
@@ -13,7 +14,7 @@ function playSound(e) {
     audio = document.querySelector(`audio[data-key="${e}"]`);
     key = document.querySelector(`.key[data-key="${e}"]`);
   }
-  console.log(audio); //show what is passed on from variable "audio" in console (should be audio element if any <div class="key"> clicked (onclick) || key press down)
+  //console.log(audio); //show what is passed on from variable "audio" in console (should be audio element if any <div class="key"> clicked (onclick) || key press down)
   if (!audio) return; //stop function from running all together (if not audio element, return. (end function))
   vol = document.querySelector(".slider").value / 100;
   audio.currentTime = 0; //rewind audio track to starth
