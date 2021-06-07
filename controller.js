@@ -4,7 +4,7 @@ function playSound(e) {
   let audio;
   let key;
   let vol;
-  console.log(e);
+  //console.log(e); //show what is passed from e (event info if keydown number is onclick)
   if (e instanceof KeyboardEvent) {
     //console.log("keyboardEvent"); //show if keyboardEvent in console
     audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
