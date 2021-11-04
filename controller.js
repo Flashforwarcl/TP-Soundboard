@@ -31,7 +31,7 @@ function removeTransition(e) {
 function makeListeners() {
   const keys = document.querySelectorAll(".key");
   keys.forEach((key) =>
-    key.addEventListener("transitionend", removeTransition)
+    key.addEventListener('transitionend', removeTransition)
   );
   window.addEventListener("keydown", playSound);
   document.getElementById("initB").remove();

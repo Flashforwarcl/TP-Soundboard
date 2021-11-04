@@ -1,7 +1,6 @@
 updateview();
 function updateview() {
-  let html;
-  html = `
+    const html = `
     <div class="slidecontainer">
         <input type="range" min="0" max="100" value="20" class="slider" id="volumRange">
         </br>
@@ -40,5 +39,5 @@ function updateview() {
         <audio data-key="71" src="Sounds/Extras_soundboard_-_parametre_sounds_moon.mp3"></audio>
         <audio data-key="72" src="Sounds/Extras_soundboard_-_parametre_sounds_ufo.mp3"></audio>
     `;
-  app.innerHTML = html;
+    app.innerHTML = html;
 }
